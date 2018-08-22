@@ -2,7 +2,7 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    some = Rack::NullLogger.new
+    some = Rack::NullLogger.new(self)
     if some.datetime_format <12
     resp.write "Good morning"
     else
