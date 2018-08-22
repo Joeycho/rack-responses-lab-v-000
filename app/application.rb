@@ -4,7 +4,7 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    some = Rack::NullLogger.new(self)
+    some = Time.new
     binding.pry
     if some.datetime_format <12
     resp.write "Good morning"
