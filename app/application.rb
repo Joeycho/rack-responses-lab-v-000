@@ -8,7 +8,8 @@ class Application
     binding.pry
     if some.hour <12
     resp.write "Good Morning!"
-    else
+    end
+    if some.hour >12
     resp.write "Good Afternoon!"
     end
 
